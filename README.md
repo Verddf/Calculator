@@ -9,6 +9,10 @@
   <a href="release/Laughin-coffen.apk?raw=true"><b>Unduh APK v1.1</b></a> · Android 6.0 ke atas
 </p>
 
+<p align="center">
+  <img src="docs/screenshot-gelap.png" width="300" alt="Tampilan Laughin coffen dalam mode gelap: 58×62+9 dengan pratinjau hasil 3,605">
+</p>
+
 ## Fitur
 
 - **Hitungan desimal tepat.** 0,1 + 0,2 = 0,3, karena memakai `BigDecimal`, bukan bilangan pecahan biner.
