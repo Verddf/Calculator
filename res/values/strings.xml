@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Laughin coffen</string>
+
+    <string name="history_title">Riwayat</string>
+    <string name="history_clear">Hapus</string>
+    <string name="history_clear_confirm">Hapus semua riwayat perhitungan?</string>
+    <string name="history_empty">Belum ada riwayat.\nHasil perhitunganmu akan muncul di sini.</string>
+    <string name="cancel">Batal</string>
+
+    <string name="copied">Hasil disalin</string>
+    <string name="err_syntax">Format belum lengkap</string>
+    <string name="err_div_zero">Tidak bisa dibagi nol</string>
+    <string name="err_overflow">Angka terlalu besar</string>
+    <string name="max_digits">Maksimal 15 digit per angka</string>
+    <string name="too_long">Perhitungan terlalu panjang</string>
+
+    <string name="cd_history">Riwayat</string>
+    <string name="cd_close_history">Tutup riwayat</string>
+    <string name="cd_backspace">Hapus satu angka. Tekan lama untuk hapus semua</string>
+    <string name="cd_clear">Hapus semua</string>
+    <string name="cd_paren">Kurung</string>
+    <string name="cd_percent">Persen</string>
+    <string name="cd_div">Bagi</string>
+    <string name="cd_mul">Kali</string>
+    <string name="cd_sub">Kurang</string>
+    <string name="cd_add">Tambah</string>
+    <string name="cd_eq">Sama dengan</string>
+    <string name="cd_point">Desimal</string>
+    <string name="cd_000">Tiga nol</string>
+</resources>

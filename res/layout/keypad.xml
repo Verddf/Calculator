@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Papan tombol, dengan panel riwayat yang menutupinya saat dibuka -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/keypad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/keypad_pad">
+
+        <LinearLayout style="@style/KeyRow">
+
+            <Button
+                android:id="@+id/key_clear"
+                style="@style/Key.Fn"
+                android:contentDescription="@string/cd_clear"
+                android:text="AC"
+                android:textColor="@color/danger" />
+
+            <Button
+                android:id="@+id/key_paren"
+                style="@style/Key.Fn"
+                android:contentDescription="@string/cd_paren"
+                android:text="( )" />
+
+            <Button
+                android:id="@+id/key_percent"
+                style="@style/Key.Fn"
+                android:contentDescription="@string/cd_percent"
+                android:text="%" />
+
+            <Button
+                android:id="@+id/key_div"
+                style="@style/Key.Op"
+                android:contentDescription="@string/cd_div"
+                android:text="÷" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/KeyRow">
+
+            <Button
+                android:id="@+id/key_7"
+                style="@style/Key.Num"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/key_8"
+                style="@style/Key.Num"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/key_9"
+                style="@style/Key.Num"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/key_mul"
+                style="@style/Key.Op"
+                android:contentDescription="@string/cd_mul"
+                android:text="×" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/KeyRow">
+
+            <Button
+                android:id="@+id/key_4"
+                style="@style/Key.Num"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/key_5"
+                style="@style/Key.Num"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/key_6"
+                style="@style/Key.Num"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/key_sub"
+                style="@style/Key.Op"
+                android:contentDescription="@string/cd_sub"
+                android:text="−" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/KeyRow">
+
+            <Button
+                android:id="@+id/key_1"
+                style="@style/Key.Num"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/key_2"
+                style="@style/Key.Num"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/key_3"
+                style="@style/Key.Num"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/key_add"
+                style="@style/Key.Op"
+                android:contentDescription="@string/cd_add"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/KeyRow">
+
+            <Button
+                android:id="@+id/key_000"
+                style="@style/Key.Num"
+                android:contentDescription="@string/cd_000"
+                android:text="000"
+                android:textSize="@dimen/key_text_small" />
+
+            <Button
+                android:id="@+id/key_0"
+                style="@style/Key.Num"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/key_point"
+                style="@style/Key.Num"
+                android:contentDescription="@string/cd_point"
+                android:text="," />
+
+            <Button
+                android:id="@+id/key_eq"
+                style="@style/Key.Eq"
+                android:contentDescription="@string/cd_eq"
+                android:text="=" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/history_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="24dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.08"
+                android:text="@string/history_title"
+                android:textAllCaps="true"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/history_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/history_clear"
+                android:textColor="@color/danger"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/history_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/history_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider"
+                android:orientation="vertical"
+                android:showDividers="middle" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/history_empty"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.3"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="@string/history_empty"
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="display_pad_top">8dp</dimen>
+    <dimen name="prev_text">15sp</dimen>
+    <dimen name="expr_text_max">48sp</dimen>
+    <dimen name="expr_text_min">24sp</dimen>
+    <dimen name="result_text_max">24sp</dimen>
+    <dimen name="result_text_min">16sp</dimen>
+    <dimen name="result_gap">2dp</dimen>
+
+    <dimen name="tool_row_h">48dp</dimen>
+
+    <dimen name="keypad_pad">6dp</dimen>
+    <dimen name="key_gap">3dp</dimen>
+    <dimen name="key_radius">20dp</dimen>
+    <dimen name="key_text">22sp</dimen>
+    <dimen name="key_text_small">18sp</dimen>
+    <dimen name="key_text_fn">18sp</dimen>
+    <dimen name="key_text_op">26sp</dimen>
+</resources>

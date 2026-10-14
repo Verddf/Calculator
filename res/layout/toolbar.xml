@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Baris alat: tombol riwayat dan hapus -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tool_row_h"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/tool_row_pad"
+    android:paddingRight="@dimen/tool_row_pad">
+
+    <ImageButton
+        android:id="@+id/btn_history"
+        style="@style/ToolButton"
+        android:contentDescription="@string/cd_history"
+        android:src="@drawable/ic_history"
+        android:tint="@color/text_secondary" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/btn_backspace"
+        style="@style/ToolButton"
+        android:contentDescription="@string/cd_backspace"
+        android:src="@drawable/ic_backspace"
+        android:tint="@color/accent" />
+</LinearLayout>

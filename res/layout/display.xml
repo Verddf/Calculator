@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layar: ekspresi sebelumnya, ekspresi/hasil utama, dan pratinjau hasil -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/display_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/display_pad_bottom"
+        android:paddingLeft="@dimen/display_pad_h"
+        android:paddingRight="@dimen/display_pad_h"
+        android:paddingTop="@dimen/display_pad_top">
+
+        <TextView
+            android:id="@+id/previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:ellipsize="start"
+            android:fontFamily="sans-serif"
+            android:fontFeatureSettings="tnum"
+            android:gravity="end"
+            android:singleLine="true"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/prev_text"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/expression"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:breakStrategy="simple"
+            android:fontFamily="sans-serif-light"
+            android:fontFeatureSettings="tnum"
+            android:gravity="end"
+            android:hyphenationFrequency="none"
+            android:includeFontPadding="false"
+            android:text="0"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/expr_text_max" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/result_gap"
+            android:accessibilityLiveRegion="polite"
+            android:fontFamily="sans-serif"
+            android:fontFeatureSettings="tnum"
+            android:gravity="end"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/result_text_max" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema terang: kertas buku besar + tinta hijau -->
+    <color name="bg">#FFF3F0E8</color>
+    <color name="key_num">#FFFFFEFB</color>
+    <color name="key_fn">#FFE7E2D6</color>
+    <color name="key_op">#FFDDEBE3</color>
+    <color name="accent">#FF1E6B52</color>
+    <color name="on_accent">#FFFFFFFF</color>
+    <color name="text_primary">#FF1B2420</color>
+    <color name="text_secondary">#FF6F7A74</color>
+    <color name="danger">#FFB5462A</color>
+    <color name="divider">#FFDCD6C9</color>
+    <color name="ripple">#241B2420</color>
+
+    <!-- Warna ikon aplikasi (tidak berubah di mode gelap) -->
+    <color name="icon_bg">#FF000000</color>
+</resources>
